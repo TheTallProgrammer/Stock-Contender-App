@@ -1,6 +1,16 @@
 # Stock Contender 
 
-Welcome to Stock Contender, a state-of-the-art stock advising tool designed to leverage advanced libraries and algorithms to optimize your investment strategy. The application scans through the ever-evolving landscape of the stock market, evaluates a myriad of factors, and distills the information down to the top 15 stocks from each analysis. It further fine-tunes this selection to the top 3 contenders, providing users with clear, concise, and data-driven investment choices. 
+Introducing Stock Contender, a pioneering, data-fueled stock advising tool meticulously crafted to redefine your investment strategy. Powered by cutting-edge algorithms and state-of-the-art libraries, Stock Contender stands as an unmatched ally in navigating the tumultuous seas of the stock market.
+
+The application is your personal market scout, ceaselessly scrutinizing the ever-changing landscape of the stock market. It evaluates a constellation of factors, dissecting trends, financial data, industry updates, and more from a vast array of reliable sources. Through a stringent and sophisticated analysis process, Stock Contender filters down the multitude of stocks to the most promising picks from each scan. But it doesn't stop there. 
+
+Determined to provide you with the creme de la creme of investment options, and as of the latest verison, Stock Contender fine-tunes this selection to the top 3 contenders. This culmination is the result of an AI-assisted, data-intensive sifting process that takes into account not only the current standing of stocks but their potential trajectories as well. 
+
+But what truly sets Stock Contender apart is its capability to utilize the brilliance of the OpenAI's GPT model, even with its knowledge capped at 2021. Bridging this gap, the application feeds real-time, current data to the AI model. This unique approach empowers the AI to deliver advanced insights and strategic investment advice based on the most up-to-date information, granting you a competitive edge like no other.
+
+Moreover, with its intuitive, user-friendly interface, Stock Contender makes this complex, in-depth process seamlessly accessible. The result? Clear, concise, and data-backed investment choices delivered straight to your screen, enabling you to make informed decisions swiftly.
+
+Stock Contender transcends being just a tool—it becomes your partner, your advisor in the intricate world of stock investment. With Stock Contender, you're not just keeping up with the market, you're staying one step ahead.
 
 ## Why Stock Contender? 🎯
 
