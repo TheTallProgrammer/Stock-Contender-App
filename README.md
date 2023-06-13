@@ -4,7 +4,7 @@ Welcome to Stock Contender, a state-of-the-art stock advising tool designed to l
 
 ## Why Stock Contender? 🎯
 
-In the complex world of stock trading, making informed and timely decisions is crucial. Stock Contender puts the power of AI and comprehensive data analysis at your fingertips, transforming how you approach stock investments. With its data-driven approach and sophisticated filtering algorithm, Stock Contender gives you a competitive edge, making it an indispensable tool for every investor.
+In the dynamic world of stock trading, staying ahead of the curve requires informed and timely decisions. Stock Contender revolutionizes this process by combining the power of AI with extensive, real-time data analysis. Despite the AI model GPT's server knowledge being capped at 2021, Stock Contender bridges this gap by feeding the model with real-time data from various reliable sources. This ensures that the AI's insights and suggestions are always based on the most recent and relevant data, offering a competitive edge that is unmatched. The use of sophisticated filtering algorithms, driven by this amalgamation of AI and current data, transforms the landscape of stock investment, making Stock Contender an invaluable asset for every discerning investor.
 
 ## Key Features 🎉
 
