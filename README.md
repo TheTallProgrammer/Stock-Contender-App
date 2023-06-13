@@ -16,13 +16,16 @@ In the dynamic world of stock trading, staying ahead of the curve requires infor
 
 - **User-Friendly Interface:** What good is a sophisticated tool if it's not easy to use? With Stock Contender, you get the best of both worlds - sophisticated technology wrapped in a simple, intuitive design. Navigating through the application is as easy as a walk in the park, allowing you to focus on what matters most - making the most out of your investments. I've stripped away all the clutter, leaving you with a clean, efficient, and user-friendly interface that makes stock selection not just profitable, but enjoyable as well.
 
-### How to Get Your OpenAI API Key
-
->[Create your OpenAI API key](https://platform.openai.com/account/api-keys) by registering a free account. Please be aware, the API key is displayed just once, so **ensure you save your API key to a local text file for future usage.** If misplaced, a new one will need to be generated.
-
 ## Setup and Installation 🛠️
 
-Installing Stock Contender is as simple as executing the application file after the download. Upon running the executable, the application will automatically download the necessary libraries required for its operation - these can be found in the `requirements.txt` file within the installation directory. Should the application prompt for permissions, please accept to proceed. This may take several minutes if it's the first time running the application.
+To get started with Stock Contender, you'll need to download the application file and obtain an OpenAI API key.
+
+1. **Download the Application:** Simply download and execute the application file. Upon running the executable, the application will automatically download the necessary libraries required for its operation - these can be found in the `requirements.txt` file within the installation directory. Should the application prompt for permissions, please accept to proceed. This may take several minutes if it's the first time running the application.
+
+2. **Obtain Your OpenAI API Key:** Stock Contender integrates with OpenAI's GPT model, necessitating an OpenAI API key for its operation. You can [create your OpenAI API key](https://platform.openai.com/account/api-keys) by registering a free account. Please be aware, the API key is displayed just once, so **ensure you save your API key to a local text file for future usage.** If misplaced, a new one will need to be generated.
+
+Once these steps are completed, you're ready to leverage the full power of Stock Contender for your stock investments!
+
 
 ## Usage 💻
 
