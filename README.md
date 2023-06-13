@@ -58,6 +58,10 @@ Stock Contender is the brainchild of:
 - Email: [loganf0101@gmail.com](mailto:loganf0101@gmail.com)
 - GitHub: [@TheTallProgrammer](https://github.com/TheTallProgrammer)
 
+## Disclaimer
+
+Stock Contender is intended to be a tool for identifying stocks of interest based on data analysis and is not providing investment advice. The user is responsible for their own investment decisions and is encouraged to seek professional advice before investing. The app does not guarantee profit or predict future performance.
+
 ## License 📄
 
 Stock Contender is licensed under the Apache License, Version 2.0. For more details, please refer to the [LICENSE](LICENSE) file in the repository.
