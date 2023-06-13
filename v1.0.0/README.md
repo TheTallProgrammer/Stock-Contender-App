@@ -1,5 +1,5 @@
 
-# Stock Contender 
+# Stock Contender v1.0.0
 
 Stock Contender is a sophisticated stock advising application designed to identify potential investment opportunities using an array of libraries and algorithms. It analyzes various factors to filter the top 15 stocks from each search, subsequently breaking them down to the top 3, and provides users with clear, concise, and data-backed decisions on stock investments.
 
