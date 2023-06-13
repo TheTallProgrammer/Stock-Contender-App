@@ -1,6 +1,6 @@
 # Stock Contender 
 
-Welcome to Stock Contender, a state-of-the-art stock advising tool designed to leverage advanced libraries and algorithms to optimize your investment strategy. The application scans through the ever-changing stock market, evaluates a myriad of factors, and filters down to the top 15 stocks from each search. It further fine-tunes this selection to the top 3 contenders, providing users with clear, concise, and data-driven investment choices. 
+Welcome to Stock Contender, a state-of-the-art stock advising tool designed to leverage advanced libraries and algorithms to optimize your investment strategy. The application scans through the ever-evolving landscape of the stock market, evaluates a myriad of factors, and distills the information down to the top 15 stocks from each analysis. It further fine-tunes this selection to the top 3 contenders, providing users with clear, concise, and data-driven investment choices. 
 
 ## Why Stock Contender? 🎯
 
@@ -16,9 +16,9 @@ In the dynamic world of stock trading, staying ahead of the curve requires infor
 
 - **User-Friendly Interface:** What good is a sophisticated tool if it's not easy to use? With Stock Contender, you get the best of both worlds - sophisticated technology wrapped in a simple, intuitive design. Navigating through the application is as easy as a walk in the park, allowing you to focus on what matters most - making the most out of your investments. I've stripped away all the clutter, leaving you with a clean, efficient, and user-friendly interface that makes stock selection not just profitable, but enjoyable as well.
 
-## How to Get Started 🚀
+### How to Get Your OpenAI API Key
 
-To use Stock Contender, you need an open AI account to access an OpenAI API Key, which is free to create. This key enables the application to harness the power of OpenAI's GPT model. Get your free key by [creating a free OpenAI account](https://platform.openai.com/account/api-keys).
+>[Create your OpenAI API key](https://platform.openai.com/account/api-keys) by registering a free account. Please be aware, the API key is displayed just once, so **ensure you save your API key to a local text file for future usage.** If misplaced, a new one will need to be generated.
 
 ## Setup and Installation 🛠️
 
