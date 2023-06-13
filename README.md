@@ -18,7 +18,7 @@ Despite the AI model GPT's server knowledge being capped at 2021, Stock Contende
 
 - **AI-Powered Insights:** Stock Contender integrates with OpenAI's GPT model, which is a powerhouse of advanced machine learning algorithms. This integration equips the tool with the ability to provide further insights and advanced filtering.
 
-- **Robust Ranking System:** Stock Contender uses a robust ranking system that weighs stocks based on a variety of factors. This system ensures that the stock suggestions you receive are reliable and trustworthy.
+- **Robust Ranking System:** Stock Contender uses a robust ranking system that weighs stocks based on a variety of factors. This system is designed to offer stock suggestions based on a rigorous set of criteria, aiming to provide a solid foundation for your own research.
 
 - **User-Friendly Interface:** Navigating through the application is straightforward, allowing you to focus on exploring the data presented.
 
