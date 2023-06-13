@@ -11,24 +11,6 @@ Stock Contender is a sophisticated stock advising application designed to identi
 - Robust ranking backed by comprehensive data
 - Integration with OpenAI GPT for additional insights and filtering
 
-## Future Features 🚀
-
-I have ambitious plans for Stock Contender. With your support and feedback, I aim to make it the go-to application for stock advising. Here's a sneak peek into what's in store:
-
-- **Secure User Authentication:** I understand the importance of security and convenience. In an upcoming update, I plan to introduce a login screen that will store user credentials securely in a remote SQL database. This feature will also offer users the option to save their API keys with their credentials for easy access.
-
-- **Expanding User Options:** I'm working on expanding the functionalities available to users. Future updates will offer at least four additional options for contending stocks. These include:
-
-  - **Individual Stock Analysis:** Users will be able to input specific stocks for detailed analysis, providing precise feedback on the investment potential of the selected stocks.
-  
-  - **Stock Comparer:** Analyze and compare different stocks to understand their performance, growth, and potential.
-  
-  - **Revolutionary Stock Price Prediction:** I am currently in the process of developing advanced algorithms that will forecast stock price movements based on a plethora of data. This feature is currently a work in progress, and I aim to revolutionize stock prediction with it.
-  
-  - **Stock of the Day:** A new feature that presents you with the top stock pick of the day, backed by extensive data analysis. This feature will be more data-driven and accurate than the current top 3 stocks due to a significantly larger room for token count.
-
-Stay tuned for these exciting enhancements that will transform your stock advising experience with Stock Contender!
-
 ## Prerequisites 📚
 
 To utilize Stock Contender, you must have an OpenAI API Key. This key is essential as the application integrates with the OpenAI GPT model to filter and rank stocks.
