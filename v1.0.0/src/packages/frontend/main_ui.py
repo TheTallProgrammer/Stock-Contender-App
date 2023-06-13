@@ -27,29 +27,30 @@ from packages.backend.progress_tracker.global_instance import progress_tracker
 from PyQt5.QtCore import pyqtSlot as pyQtSlot
 from packages.backend.gpt_driver import gpt_driver
 import qdarktheme
+from packages.frontend.main_ui_functions import Ui_MainWindow_Functions
 
 # =================================
-# APP CLASS
-class Ui_MainWindow(QtWidgets.QMainWindow):  # Make Ui_MainWindow inherit from QMainWindow
+# APP CLASS, which is a subclass of QMainWindow and Ui_MainWindow_Functions
+class Ui_MainWindow(QtWidgets.QMainWindow, Ui_MainWindow_Functions):  # Make Ui_MainWindow inherit from QMainWindow
     def __init__(self, *args, **kwargs):
         super(Ui_MainWindow, self).__init__(*args, **kwargs)
         # self.setWindowIcon(QtGui.QIcon('icon.png'))
         self.setupUi(self)
+        
+        # PROGRESS BAR CONTENTS
         self.progress_tracker = progress_tracker
         self.progress_tracker.update_progress.connect(self.progressBar.setValue)
         self.worker = Worker()  # Initialize the worker object
         self.worker.taskFinished.connect(self.update_output)  # Connect taskFinished signal to a slot
         self.worker.update_progress_bar.connect(self.update_progress)
+        
+        
         self.api_key = ""
         self.api_key_entry_in_progress = False
         self.reset_button.clicked.connect(self.reset_button_clicked)  # Connect reset button to its handler
         self.reset_button.setEnabled(False)  # Disable reset button at start
         # self.worker.taskFailed.connect(self.handle_task_failed)  # connect the taskFailed signal to its handler
         self.worker.taskFinished.connect(self.handle_task_finished)
-        
-    @pyQtSlot(int)
-    def update_progress(self, value):
-        self.progress.setValue(value)
     
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -57,6 +58,78 @@ class Ui_MainWindow(QtWidgets.QMainWindow):  # Make Ui_MainWindow inherit from Q
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/app_icon/icons/app_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
+        
+        # STYLE SHEET
+        MainWindow.setStyleSheet("*{\n"
+            "    background-color: #FFFFFF;  /* Global application background color is pure white */\n"
+            "}\n"
+            "\n"
+            "QPushButton{\n"
+            "    border-style: solid;\n"
+            "    border-color: #050a0e;\n"
+            "    border-width: 1px;\n"
+            "    border-radius: 5px;\n"
+            "    color: #d3dae3;\n"
+            "    padding: 2px;\n"
+            "    background-color: #100E19;\n"
+            "}\n"
+            "\n"
+            "QPushButton::default{\n"
+            "    border-style: solid;\n"
+            "    border-color: #050a0e;\n"
+            "    border-width: 1px;\n"
+            "    border-radius: 5px;\n"
+            "    color: #000000;  /* Default button text color is black */\n"
+            "    padding: 2px;\n"
+            "    background-color: #FFFFFF;  /* Default button background color is white */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    border: 2px solid #000000;\n"
+            "    border-radius: 5px;\n"
+            "    background-color: #F0F0F0;  /* Slightly darker background color when hovered */\n"
+            "    color: #000000;\n"
+            "    text-align: center;\n"
+            "    padding: 5px;\n"
+            "}\n"
+            "\n"
+            "QPushButton:pressed{\n"
+            "    border-width: 2px;\n"
+            "    border-color: #000000;\n"
+            "    border-radius: 5px;\n"
+            "    background-color: #E5E5E5;  /* Even darker background color when pressed */\n"
+            "    color: #000000;\n"
+            "}\n"
+            "\n"
+            "QProgressBar{\n"
+            "    border: 2px solid grey;\n"
+            "    border-radius: 5px;\n"
+            "    text-align: center;\n"
+            "    color: grey;\n"
+            "}\n"
+            "\n"
+            "QProgressBar::chunk {\n"
+            "    background-color: black;\n"
+            "}\n"
+            "\n"
+            "QScrollBar:vertical {\n"
+            "    background: #FFFFFF;\n"
+            "    width: 15px;\n"
+            "    margin: 0px;\n"
+            "}\n"
+            "\n"
+            "QScrollBar::handle:vertical {\n"
+            "    background: #000000;\n"
+            "}\n"
+            "\n"
+            "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical, QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+            "    width: 0px;\n"
+            "    background: none;\n"
+            "}\n"
+            "")
+
+        
+        
         MainWindow.setIconSize(QtCore.QSize(256, 256))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -108,13 +181,16 @@ class Ui_MainWindow(QtWidgets.QMainWindow):  # Make Ui_MainWindow inherit from Q
         self.output_label = ScrollLabel(self.output_widget)
         self.output_label.setGeometry(QtCore.QRect(10, 10, 321, 531))
         font = QtGui.QFont()
-        font.setPointSize(11)
+        font.setFamily("Yu Gothic Medium")
+        font.setPointSize(12)
         self.output_label.setFont(font)
         self.output_label.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.output_label.setFrameShape(QtWidgets.QFrame.Box)
         self.output_label.setFrameShadow(QtWidgets.QFrame.Plain)
         self.output_label.setAlignment(QtCore.Qt.AlignHCenter)
         self.output_label.setLineWidth(2)
+        self.output_label.setTextInteractionFlags(QtCore.Qt.LinksAccessibleByMouse|QtCore.Qt.TextSelectableByMouse)
+        self.output_label.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
         # =================================
         
         # =================================
@@ -167,101 +243,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):  # Make Ui_MainWindow inherit from Q
         self.reset_button.setText(_translate("MainWindow", "Reset and Clear"))
     
     
-    # =================================
-    # Backend Communications Functions
-    def press_it(self, input):
-        if input == 1:
-            self.option_1.setEnabled(False)  # Disable the option_1 button
-            self.update_output("Contending Stocks...")
-            self.worker.start()
-
-    @pyQtSlot(int)
-    def update_progress(self, value):
-        self.progressBar.setValue(value)
-
-    def handle_task_finished(self, message):
-        self.update_output(message)
-        # Always enable the reset button when the task is finished, regardless of the progress value
-        self.reset_button.setEnabled(True)
-
-    def handle_task_failed(self, message):
-        self.update_output(f"Error: {message}")  # display the error message
-        self.option_1.setEnabled(True)  # re-enable the option_1 button
-        self.reset_button.setEnabled(False)  # disable the reset button
-
-        
-    
-    # =================================
-    
-    # =================================
-    # Output Text Functions
-    
-    def update_output(self, message):
-        self.output_label.setText(message)
-    
-    def activate_button_clicked(self):
-        org_id = self.api_key
-        try:
-            if validate_api_key(org_id): 
-                self.option_picker_widget.show()
-                self.activate_button.hide()  # Hide the button
-                    
-                # Get the current sizes
-                lineEdit_width = self.api_key_input.width()
-                activate_button_width = self.activate_button.width()
-                    
-                # Calculate new width and set it
-                new_width = lineEdit_width + activate_button_width
-                self.api_key_input.setFixedWidth(new_width)
-                self.api_key_input.setReadOnly(True)
-                self.api_key_label.setFixedWidth(new_width)
-                    
-                # Replace the QLineEdit text with asterisks of the same length as the API key
-                self.api_key_input.setText('*' * len(org_id))
-                    
-                _translate = QtCore.QCoreApplication.translate
-                self.api_key_label.setText(_translate("MainWindow", "API KEY accepted"))
-                self.update_output("Waiting for option selection...")
-        except Exception as e:
-            self.api_key = ""  # Clear the api_key
-            self.api_key_input.setText("")  # Clear the QLineEdit
-            self.update_output(str(e))
-                
-    
-    def handle_text_changed(self, text):
-        if not self.api_key_entry_in_progress:
-            if len(text) > len(self.api_key):  # Detects input or paste
-                added_text = text[len(self.api_key):]  # Captures new input
-                self.api_key += added_text  # Updates api_key
-                self.api_key_entry_in_progress = True
-                self.api_key_input.setText('*'*(len(text)-1) + text[-1]) # Updates display
-                self.api_key_input.setCursorPosition(len(self.api_key))
-                self.api_key_entry_in_progress = False
-            elif len(self.api_key) > len(text):  # Detects backspace
-                self.api_key = self.api_key[:len(text)]  # Trims api_key
-                self.api_key_input.setText('*' * len(self.api_key))  # Updates display
-                self.api_key_input.setCursorPosition(len(self.api_key))
-                
-    # This should be added where the reset button event is handled
-    def reset_button_clicked(self):
-        self.progressBar.setValue(0)  # Reset the progress bar
-        self.output_label.setText('Waitng for option...')  # Clear the output
-        self.option_1.setEnabled(True)  # Enable the option_1 button
-        self.reset_button.setEnabled(False)
-        gpt_driver.messages.clear()  # Clear the message history
-           # Disconnect the signals
-        self.worker.taskFinished.disconnect()
-        self.worker.quit()
-        self.worker.wait()
-
-        # Create a new instance
-        self.worker = Worker()
-
-        # Reconnect the signals
-        self.worker.taskFinished.connect(self.update_output)
-        self.worker.taskFinished.connect(self.handle_task_finished)
-        self.progress_tracker.reset()
-    # =================================
+   
     
 # END OF APP CLASS
 # =================================
@@ -269,18 +251,5 @@ class Ui_MainWindow(QtWidgets.QMainWindow):  # Make Ui_MainWindow inherit from Q
 def init_window():
     app = QApplication(sys.argv)
     MainWindow = Ui_MainWindow()
-
-    # Load and set the stylesheet
-    style_path = "packages/frontend/QtStyle/NeonButtons.qss"
-    
-    # Check if file exists before opening
-    if os.path.isfile(style_path):
-        file = QFile(style_path)
-        file.open(QFile.ReadOnly | QFile.Text)
-        stream = QTextStream(file)
-        app.setStyleSheet(stream.readAll())
-    else:
-        print(f"Could not find stylesheet file at {style_path}")
-
     MainWindow.show()
     sys.exit(app.exec_())

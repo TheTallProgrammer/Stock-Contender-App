@@ -2,4 +2,7 @@
   <qresource prefix="app_icon">
     <file>icons/app_icon.svg</file>
   </qresource>
+  <qresource prefix="style_sheet">
+    <file>NeonButtons.qss</file>
+  </qresource>
 </RCC>

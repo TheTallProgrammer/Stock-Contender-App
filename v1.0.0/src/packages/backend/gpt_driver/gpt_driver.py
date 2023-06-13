@@ -2,9 +2,6 @@ import openai
 import os
 from packages.backend.progress_tracker.global_instance import progress_tracker
 
-# Keys
-# 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
-
 messages = [{"role": "system", "content": "You are an intelligent AI stock broker with lots of insight and wisdom."}]
 
 def receive_input(message): 

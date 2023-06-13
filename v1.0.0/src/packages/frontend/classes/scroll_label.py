@@ -34,3 +34,14 @@ class ScrollLabel(QScrollArea):
     def setText(self, text):
         # setting text to the label
         self.label.setText(text)
+        
+    def setTextInteractionFlags(self, flags):
+        self.label.setTextInteractionFlags(flags)
+    
+    def setFont(self, font):
+        self.label.setFont(font)
+
+    def setAlignment(self, alignment):
+        self.label.setAlignment(alignment)
+
+  

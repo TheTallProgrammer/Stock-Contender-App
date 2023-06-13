@@ -1,6 +1,14 @@
 from packages.frontend.main_ui import init_window
+import subprocess
+import sys
+
+# def install_packages():
+#     subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
+
+# Then, call the function at the start of your main.py
 
 def main():
+    # install_packages()
     init_window()
 
 if __name__ == "__main__":

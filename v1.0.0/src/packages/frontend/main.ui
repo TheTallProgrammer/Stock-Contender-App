@@ -17,6 +17,60 @@
    <iconset resource="resources/resources.qrc">
     <normaloff>:/app_icon/icons/app_icon.svg</normaloff>:/app_icon/icons/app_icon.svg</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+    background-color: #FFFFFF;  /* Global application background color is pure white */
+}
+
+QPushButton{
+    border-style: solid;
+    border-color: #050a0e;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #d3dae3;
+    padding: 2px;
+    background-color: #100E19;
+}
+
+QPushButton::default{
+    border-style: solid;
+    border-color: #050a0e;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #000000;  /* Default button text color is black */
+    padding: 2px;
+    background-color: #FFFFFF;  /* Default button background color is white */
+}
+
+QPushButton:hover {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #F0F0F0;  /* Slightly darker background color when hovered */
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+QPushButton:pressed{
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 5px;
+    background-color: #E5E5E5;  /* Even darker background color when pressed */
+    color: #000000;
+}
+
+QProgressBar{
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    color: grey;
+}
+
+QProgressBar::chunk {
+    background-color: black;
+}
+</string>
+  </property>
   <property name="iconSize">
    <size>
     <width>256</width>
@@ -113,7 +167,7 @@
      <property name="font">
       <font>
        <family>Yu Gothic Medium</family>
-       <pointsize>11</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="layoutDirection">
@@ -145,9 +199,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>560</y>
+       <y>550</y>
        <width>321</width>
-       <height>28</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -193,7 +247,7 @@
        <x>10</x>
        <y>20</y>
        <width>441</width>
-       <height>23</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="value">

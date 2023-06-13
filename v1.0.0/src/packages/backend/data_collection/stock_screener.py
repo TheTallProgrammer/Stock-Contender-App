@@ -9,7 +9,7 @@ from yahooquery import Screener
 
 def retrieve_stocks():
     s = Screener()
-    found_stocks = s.get_screeners(['undervalued_large_caps', 'undervalued_growth_stocks', 'day_gainers'], 15)    
+    found_stocks = s.get_screeners(['undervalued_large_caps', 'undervalued_growth_stocks', 'most_actives', 'portfolio_anchors'], 12)    
     progress_tracker.register_task()
     
     return [
