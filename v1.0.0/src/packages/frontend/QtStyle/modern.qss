@@ -1,0 +1,68 @@
+/* General application style */
+* {
+    font-size: 14px;
+    font-family: Arial;
+}
+
+/* QMainWindow style */
+QMainWindow {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #4a4a4a; /* Dark gray button color */
+    color: #ffffff; /* White text color */
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 70px;
+}
+
+QPushButton:hover {
+    background-color: #626262; /* Slightly lighter gray on hover */
+}
+
+QPushButton:pressed {
+    background-color: #4a4a4a; /* Same as normal button color when pressed */
+    padding-left: 7px;
+    padding-top: 7px; /* Button appears to press down */
+}
+
+QPushButton:disabled {
+    background-color: #4a4a4a;
+    color: #7a7a7a; /* Light gray text when button is disabled */
+}
+
+/* QLineEdit styles */
+QLineEdit {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c4c4c4; /* Light gray border */
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* QLabel styles */
+QLabel {
+    color: #4a4a4a; /* Dark gray text color */
+}
+
+/* QCheckBox styles */
+QCheckBox {
+    padding: 3px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/images/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/images/checkbox_checked.png);
+}
