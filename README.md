@@ -18,11 +18,23 @@ In the complex world of stock trading, making informed and timely decisions is c
 
 ## How to Get Started 🚀
 
-To use Stock Contender, you need an OpenAI API Key. This key enables the application to harness the power of OpenAI's GPT model. Get your key by [creating a free OpenAI account](https://platform.openai.com/account/api-keys).
+To use Stock Contender, you need an open AI account to access an OpenAI API Key, which is free to create. This key enables the application to harness the power of OpenAI's GPT model. Get your free key by [creating a free OpenAI account](https://platform.openai.com/account/api-keys).
 
-## Setup and Usage 🛠️💻
+## Setup and Installation 🛠️
 
-Setting up and using Stock Contender is a breeze. After downloading and executing the application file, the application will automatically install the necessary libraries. Then, you'll be prompted to enter your OpenAI API Key, which activates the application's AI-powered features.
+Installing Stock Contender is as simple as executing the application file after the download. Upon running the executable, the application will automatically download the necessary libraries required for its operation - these can be found in the `requirements.txt` file within the installation directory. Should the application prompt for permissions, please accept to proceed. This may take several minutes if it's the first time running the application.
+
+## Usage 💻
+
+After launching the Stock Contender application, you'll be prompted to enter your API key. If you need guidance on how to obtain this key, please refer to the 'How to Get Your OpenAI API Key' section.
+
+Enter your API key by typing it directly into the designated input area, or paste it if you have it copied. Click the 'Activate' button to submit your key. The application will verify your key - if it is accepted, you will be notified. In case of any issues with the key, an error message will be displayed indicating the problem.
+
+With your API key validated, you're ready to begin. Click on the available option to start the analysis process. Stock Contender will then commence its robust data collection and analysis to identify the most promising stocks for investment. 
+
+As the application works its magic, a progress bar will illustrate the ongoing process of data collection and analysis. Upon reaching 100%, the advised stocks will be displayed on the right side of the application. 
+
+Once you have reviewed the output, you can reset the application by clicking the 'Reset and Clear' button. Feel free to repeat the process by clicking on the available option button again for new results. Remember, each analysis by the data-driven AI may yield different stocks - but rest assured, each of them is a solid contender.
 
 ## Support and Feedback 📞
 
