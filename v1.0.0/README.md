@@ -1,6 +1,6 @@
-# Stock Contender v1.0
+# Stock Contender v1.0.0 
 
-Stock Contender is a state-of-the-art, data-driven stock advising application, leveraging the power of advanced algorithms and the Chat GPT AI model by OpenAI. It deploys sophisticated data screening techniques to provide optimized, accurate, and profitable investment opportunities in the current stock market.
+Welcome to the first release of Stock Contender, your sophisticated, AI-powered stock advisory tool. Stock Contender is a state-of-the-art, data-driven stock advising application, leveraging the power of advanced algorithms and the Chat GPT AI model by OpenAI. It deploys sophisticated data screening techniques to provide optimized, accurate, and profitable investment opportunities in the current stock market.
 
 ## Current Features 🎉
 
@@ -16,29 +16,13 @@ Stock Contender is a state-of-the-art, data-driven stock advising application, l
 
 - **Real-Time Screener Data and News Analysis:** Stock Contender bases its recommendations on real-time screener data and a wide range of news, including analytic reviews, company meetings, and financials. The algorithm considers all these factors to ensure accurate and profitable recommendations.
 
-## Prerequisites 📚
+## Release Notes for v1.0.0 🚀
 
-Stock Contender requires an OpenAI API Key for operation. This key is crucial as the application integrates with OpenAI's GPT model for stock filtering and ranking. 
-
-### How to Get Your OpenAI API Key
-
->[Create your OpenAI API key](https://platform.openai.com/account/api-keys) by registering a free account. Please be aware, the API key is displayed just once, so **ensure you save your API key to a local text file for future usage.** If misplaced, a new one will need to be generated.
-
-## Setup and Installation 🛠️
-
-Installing Stock Contender is as simple as executing the application file after the download. Upon running the executable, the application will automatically download the necessary libraries required for its operation - these can be found in the `requirements.txt` file within the installation directory. Should the application prompt for permissions, please accept to proceed. This may take several minutes if it's the first time running the application.
-
-## Usage 💻
-
-After launching the Stock Contender application, you'll be prompted to enter your API key. If you need guidance on how to obtain this key, please refer to the 'How to Get Your OpenAI API Key' section.
-
-Enter your API key by typing it directly into the designated input area, or paste it if you have it copied. Click the 'Activate' button to submit your key. The application will verify your key - if it is accepted, you will be notified. In case of any issues with the key, an error message will be displayed indicating the problem.
-
-With your API key validated, you're ready to begin. Click on the available option to start the analysis process. Stock Contender will then commence its robust data collection and analysis to identify the most promising stocks for investment. 
-
-As the application works its magic, a progress bar will illustrate the ongoing process of data collection and analysis. Upon reaching 100%, the advised stocks will be displayed on the right side of the application. 
-
-Once you have reviewed the output, you can reset the application by clicking the 'Reset and Clear' button. Feel free to repeat the process by clicking on the available option button again for new results. Remember, each analysis by the data-driven AI may yield different stocks - but rest assured, each of them is a solid contender.
+- Highly optimized data collection for quick, real-time results.
+- AI-driven top 3 stock recommendations.
+- Revamped user interface for easy navigation and usage.
+- Added 'Reset and Clear' feature for fresh analysis and recommendations.
+- No known bugs at the moment. Report any issues you encounter.
 
 ## Future Features 🚀
 
@@ -58,36 +42,8 @@ I have ambitious plans for Stock Contender. With your support and feedback, I ai
 
 Stay tuned for these exciting enhancements that will transform your stock advising experience with Stock Contender!
 
-## Author 🖋️
+## How to Update 🔄
 
-👤 **Logan Falkenberg**
+Download the latest version from the GitHub repository.
 
-- Role: Lead Developer, Project Maintainer
-- Email: [loganf0101@gmail.com](mailto:loganf0101@gmail.com)
-- GitHub: [@TheTallProgrammer](https://github.com/TheTallProgrammer)
-
-Logan Falkenberg is the solo developer behind Stock Contender. He has harnessed the power of Python and integrated advanced libraries and algorithms to provide clear, concise, and data-backed decisions on stock investments. The journey through this project has been both challenging and rewarding, and the future looks exciting.
-
-## License 📄
-
-Stock Contender is licensed under the MIT License:
-
-Copyright (c) 2023 Logan Falkenberg
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Thank you for your support, and happy stock hunting!
