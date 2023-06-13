@@ -58,6 +58,16 @@ I have ambitious plans for Stock Contender. With your support and feedback, I ai
 
 Stay tuned for these exciting enhancements that will transform your stock advising experience with Stock Contender!
 
+## Author 🖋️
+
+👤 **Logan Falkenberg**
+
+- Role: Lead Developer, Project Maintainer
+- Email: [loganf0101@gmail.com](mailto:loganf0101@gmail.com)
+- GitHub: [@TheTallProgrammer](https://github.com/TheTallProgrammer)
+
+Logan Falkenberg is the solo developer behind Stock Contender. He has harnessed the power of Python and integrated advanced libraries and algorithms to provide clear, concise, and data-backed decisions on stock investments. The journey through this project has been both challenging and rewarding, and the future looks exciting.
+
 ## License 📄
 
 Stock Contender is licensed under the MIT License:
@@ -81,13 +91,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Author 🖋️
-
-👤 **Logan Falkenberg**
-
-- Role: Lead Developer, Project Maintainer
-- Email: [loganf0101@gmail.com](mailto:loganf0101@gmail.com)
-- GitHub: [@TheTallProgrammer](https://github.com/TheTallProgrammer)
-
-Logan Falkenberg is the solo developer behind Stock Contender. He has harnessed the power of Python and integrated advanced libraries and algorithms to provide clear, concise, and data-backed decisions on stock investments. The journey through this project has been both challenging and rewarding, and the future looks exciting.
