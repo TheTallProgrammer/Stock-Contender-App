@@ -55,7 +55,6 @@ Stock Contender is the brainchild of:
 👤 **Logan Falkenberg**
 
 - Role: Lead Developer, Project Maintainer
-- Email: [loganf0101@gmail.com](mailto:loganf0101@gmail.com)
 - GitHub: [@TheTallProgrammer](https://github.com/TheTallProgrammer)
 
 ## Disclaimer
